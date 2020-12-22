@@ -32,6 +32,13 @@ module.exports = () => ({
                           }),
                       ]),
             ],
+            resolve: {
+                extensions: ['.ts', '.tsx', '.js', '.json'],
+                alias: {
+                  '~utils': resolve('api/src/utils'),
+                  '~components': resolve('api/src/components'),
+                },
+            },
         };
     },
 });
